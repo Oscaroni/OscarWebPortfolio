@@ -20,7 +20,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>OscarWebPortfolio</title>
 </head>
 <body>
@@ -33,19 +33,22 @@
     -->
 
     <main>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" aria-label="Tenth navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navTop" aria-controls="navTop" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-md-center" id="navTop">
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">CV</a>
+                            <a class="nav-link active" aria-current="page" href="#">Centered nav only</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kod</a>
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
@@ -59,232 +62,250 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="bg-light">
-                <div class="col-sm-12 mx-auto">
-                    <div class="text-center">
-                        <h1>Mina Färdigheter</h1>
-                    </div>
-                    
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3" id="navMobile">B</div>
-                            <div class="col-sm-9">
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Python Programmering</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till Python på King.</p>
-                                                    <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="container bg-light">
 
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">C++ Programmering</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C++ på King.</p>
-                                                    <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+            <!-- Rubrik -->
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h1>Mina Färdigheter</h1>
+                </div>
+            </div>
+            <!-- Slut Rubrik -->
+            <div class="row">
+                <div class="col-sm-3" id="navMobile">
+                    <div class="filterBoxMobile">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">C#</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">C++</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Ärendehantering</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">React</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Azure</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Episerver</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">SQL</button>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <!--Start Component SkillBlock-->
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="file:///C:\Users\owirz\source\repos\OscarWebPortfolio\OscarWebPortfolio\ClientApp\src\kinglogo.jpg" class="img-fluid rounded-start" alt="Foto">
                                 </div>
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Ärendehantering</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till ärendehantering på King.</p>
-                                                    <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">C# Programmering</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">7minds</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C#.</p>
-                                                    <p class="card-text"><small class="text-muted">Projektanställning 2019</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">React</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Privat</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till React.</p>
-                                                    <p class="card-text"><small class="text-muted">Sep 2021 - nu</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                        <div class="row g-0">
-                                            <div class="col-md-3">
-                                                <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">QA - Flerspelartestning</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Starbreeze</h6>
-                                                    <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till testning på Starbreeze</p>
-                                                    <p class="card-text"><small class="text-muted">Jan 2019 - Juni 2019</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Python Programmering</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till Python på King.</p>
+                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3" id="navDesktop">
-                                <h2>Filter</h2>
-                                <div class="container">
-                                    <h3>Förmågor</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            C#
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            C++
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Ärendehantering
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            React
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Azure
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Episerver
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            SQL
-                                        </label>
+                        </div>
+                    </div>
+                    <!--End Component SkillBlock-->
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="../src/kinglogo.jpg" class="img-fluid rounded-start" alt="Foto">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">C++ Programmering</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C++ på King.</p>
+                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
                                     </div>
                                 </div>
-                                <div class="container">
-                                    <h3>Arbetsplats</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            King
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Starbreeze
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            7minds
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Privata Projekt
-                                        </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ärendehantering</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till ärendehantering på King.</p>
+                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
                                     </div>
                                 </div>
-                                <div class="container">
-                                    <h3>Arbetsform</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Heltidsanställning
-                                        </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">C# Programmering</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7minds</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C#.</p>
+                                        <p class="card-text"><small class="text-muted">Projektanställning 2019</small></p>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Praktik
-                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">React</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Privat</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till React.</p>
+                                        <p class="card-text"><small class="text-muted">Sep 2021 - nu</small></p>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Projektanställning
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Utbildning
-                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row contentBox">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">QA - Flerspelartestning</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Starbreeze</h6>
+                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till testning på Starbreeze</p>
+                                        <p class="card-text"><small class="text-muted">Jan 2019 - Juni 2019</small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-3" id="navDesktop">
+                    <div class="row filterBox">
+                        <div class="card">
+                            <h3>Förmågor</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    C#
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    C++
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Ärendehantering
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    React
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Azure
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Episerver
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    SQL
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row filterBox">
+                        <div class="card">
+                            <h3>Arbetsplats</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    King
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Starbreeze
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    7minds
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Privata Projekt
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row filterBox">
+                        <div class="card">
+                            <h3>Arbetsform</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Heltidsanställning
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Praktik
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Projektanställning
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Utbildning
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-        
+
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
