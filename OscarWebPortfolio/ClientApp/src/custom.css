@@ -1,35 +1,27 @@
-/* Provide sufficient contrast against white background */
-/*a {
-  color: #0366d6;
+/*Blue Base
+    Brighter: #558CCC
+    Base: #4573A8
+    Darker: #35587F
+*/
+
+.moreless {
+    display:inline-block;
+    color: #558CCC;
+    font-weight: 600;
+    margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-code {
-  color: #E01A76;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-.themed-grid-col {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86, 61, 124, .15);
-    border: 1px solid rgba(86, 61, 124, .2);
+.moreless:hover {
+    color: #4573A8;
 }
 
-.themed-container {
-    padding: .75rem;
-    margin-bottom: 1.5rem;
-    background-color: rgba(0, 123, 255, .15);
-    border: 1px solid rgba(0, 123, 255, .2);
-}*/
-.backgroundColor{
-
+.backgroundColor {
 }
+
 .logo {
     background-image: url('file:///C:\Users\owirz\source\repos\OscarWebPortfolio\OscarWebPortfolio\ClientApp\src\kinglogo.jpg');
 }
+
 .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1200px;
 }
@@ -43,20 +35,30 @@ code {
 /*.navbar {
     margin-bottom: 20px;
 }*/
-.contentBox{
+.skillBlock {
     padding: 0rem 1.5rem 1rem 3rem;
-
 }
+
+.skillBlock img {
+    display: block;
+}
+
 .filterBox {
     padding: 0rem 3rem 1rem 1.5rem;
 }
+
 .filterBoxMobile {
     padding: 0rem 1rem 1rem 1rem;
     max-height: 35px;
 }
-.filterBoxMobile button{
+
+.filterBoxMobile button {
     margin-bottom: 0.5rem;
 }
+
+.hiddenFiltersDesktop {
+}
+
 #navDesktop {
     display: block;
 }
@@ -67,32 +69,27 @@ code {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    
 }
 
 @media only screen and (max-width: 992px) {
-    
-    .contentBox {
+
+    .skillBlock {
         padding: 0.0rem 0.5rem 0.5rem 1rem;
     }
 
@@ -100,6 +97,7 @@ code {
         padding: 0.0rem 1rem 0.5rem 0.5rem;
     }
 }
+
 @media only screen and (max-width: 575px) {
     #navDesktop {
         display: none;
@@ -109,9 +107,13 @@ code {
         display: block;
     }
 
-    .contentBox {
+    .skillBlock {
         padding: 0.0rem 1rem 0.5rem 1rem;
     }
+
+        .skillBlock img {
+            display: none;
+        }
 }
 /*@media only screen and (min-width: 1200px) {
     #navDesktop {

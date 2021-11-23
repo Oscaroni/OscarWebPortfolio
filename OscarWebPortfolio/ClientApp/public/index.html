@@ -27,10 +27,10 @@
     <noscript>
         You need to enable JavaScript to run this app.
     </noscript>
-    <!--
-        React div for later
-        <div id="root"></div>
-    -->
+
+    <!--React div for later-->
+    <!--<div id="root"></div>-->
+
 
     <main>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
@@ -73,7 +73,12 @@
             <!-- Slut Rubrik -->
             <div class="row">
                 <div class="col-sm-3" id="navMobile">
-                    <div class="filterBoxMobile">
+                    <div>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#filterButtonsMobile" aria-expanded="false" aria-controls="filterButtonsMobile">
+                            Visa Filter
+                        </button>
+                    </div>
+                    <div class="filterBoxMobile collapse" id="filterButtonsMobile">
                         <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">C#</button>
                         <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">C++</button>
                         <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Ärendehantering</button>
@@ -84,111 +89,8 @@
                     </div>
                 </div>
                 <div class="col-sm-9">
-                    <!--Start Component SkillBlock-->
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="file:///C:\Users\owirz\source\repos\OscarWebPortfolio\OscarWebPortfolio\ClientApp\src\kinglogo.jpg" class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Python Programmering</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till Python på King.</p>
-                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Component SkillBlock-->
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="../src/kinglogo.jpg" class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">C++ Programmering</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C++ på King.</p>
-                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ärendehantering</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">King</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till ärendehantering på King.</p>
-                                        <p class="card-text"><small class="text-muted">Sep 2020 - Feb 2021</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">C# Programmering</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">7minds</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till C#.</p>
-                                        <p class="card-text"><small class="text-muted">Projektanställning 2019</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">React</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">Privat</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till React.</p>
-                                        <p class="card-text"><small class="text-muted">Sep 2021 - nu</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row contentBox">
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-md-3">
-                                    <img src="..." class="img-fluid rounded-start" alt="Foto">
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">QA - Flerspelartestning</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">Starbreeze</h6>
-                                        <p class="card-text">En kort beskrivning av något jag gjort som visar på en kompetens eller färdighet relaterat till testning på Starbreeze</p>
-                                        <p class="card-text"><small class="text-muted">Jan 2019 - Juni 2019</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="root"></div>
+                    <div id="myElement"></div>
                 </div>
                 <div class="col-sm-3" id="navDesktop">
                     <div class="row filterBox">
@@ -212,29 +114,34 @@
                                     Ärendehantering
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check collapse hiddenFiltersDesktop">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     React
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check collapse hiddenFiltersDesktop">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Azure
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check collapse hiddenFiltersDesktop">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Episerver
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check collapse hiddenFiltersDesktop">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     SQL
                                 </label>
+                            </div>
+                            <div>
+                                <a class="moreless" href="#" role="button" data-bs-toggle="collapse" data-bs-target=".hiddenFiltersDesktop" aria-expanded="false" aria-controls="hiddenFiltersDesktop">
+                                    Visa Fler/Färre <i class="bi bi-chevron-down"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
