@@ -1,5 +1,4 @@
 ﻿import React, { Component } from 'react';
-import { col} from 'reactstrap';
 import { SkillBlock } from './SkillBlock';
 
 export class SkillBlockLayout extends Component {
