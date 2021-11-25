@@ -5,14 +5,14 @@
 */
 
 .moreless {
-    display:inline-block;
-    color: #558CCC;
+    display: inline-block;
+    color: #4573A8;
     font-weight: 600;
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .moreless:hover {
-    color: #4573A8;
+    color: #558CCC;
 }
 
 .backgroundColor {
@@ -26,15 +26,12 @@
     max-width: 1200px;
 }
 
-/*body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
-    padding-bottom: 20px;
-}*/
 
-/*.navbar {
-    margin-bottom: 20px;
-}*/
+
+.navbar {
+    background-color: #4573A8;
+    margin-bottom: 10px;
+}
 .skillBlock {
     padding: 0rem 1.5rem 1rem 3rem;
 }
@@ -115,19 +112,4 @@
             display: none;
         }
 }
-/*@media only screen and (min-width: 1200px) {
-    #navDesktop {
-        display: block;
-    }
 
-    #navMobile {
-        display: none;
-    }
-    .contentBox {
-        padding: 1.5rem 1.5rem 1.5rem 3rem;
-    }
-
-    .filterBox {
-        padding: 1.5rem 3rem 1.5rem 1.5rem;
-    }
-}*/
