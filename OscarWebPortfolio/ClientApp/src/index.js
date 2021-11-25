@@ -6,6 +6,8 @@ import ReactDOM from 'react-dom';
 import { SkillBlockLayout } from './components/SkillBlockLayout';
 import registerServiceWorker from './registerServiceWorker';
 
+import './custom.css'
+
 /*const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');*/
 const rootElement = document.getElementById('root');
 /*const myElement = document.getElementById('myElement');*/
